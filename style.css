@@ -210,3 +210,41 @@ header h1 {
 .github-link {
   margin-left: 20px;
 }
+
+.export-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.export-btn {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #3498db;
+}
+
+.export-btn:active {
+  background-color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .export-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .export-btn {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+}

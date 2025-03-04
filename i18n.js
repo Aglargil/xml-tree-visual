@@ -7,6 +7,11 @@ const translations = {
     inputPlaceholder: "Paste XML content here",
     visualizeBtn: "Visualize",
     resultTitle: "Visualization Result",
+    exportSvgBtn: "Export SVG",
+    exportPngBtn: "Export PNG",
+    noExportContent: "No content to export",
+    exportPngFailed:
+      "Failed to export PNG. This may be due to cross-origin resource issues, please try exporting as SVG instead.",
   },
   zh: {
     title: "XML树可视化工具",
@@ -15,6 +20,10 @@ const translations = {
     inputPlaceholder: "在此处粘贴XML内容",
     visualizeBtn: "可视化",
     resultTitle: "可视化结果",
+    exportSvgBtn: "导出SVG",
+    exportPngBtn: "导出PNG",
+    noExportContent: "没有可导出的内容",
+    exportPngFailed: "导出PNG失败。可能是由于跨域资源问题，请尝试导出SVG格式。",
   },
 };
 

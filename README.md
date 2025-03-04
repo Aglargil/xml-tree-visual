@@ -72,7 +72,12 @@ This is a tool for visualizing XML trees.
 ```
 
 ### visualization result
-TODO
+
+![alt text](result.svg)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Thanks
 
