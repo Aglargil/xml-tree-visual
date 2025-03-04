@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XML树可视化工具</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XML Tree Visualization Tool</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@d3/tree-component@1"></script>
+  </head>
+  <body>
     <div class="container">
-        <h1>XML树可视化工具</h1>
-        <div class="input-area">
-            <textarea id="xml-input" placeholder="请粘贴XML内容..."></textarea>
-            <div class="buttons">
-                <button id="visualize-btn">可视化</button>
-                <button id="upload-btn">上传XML文件</button>
-                <input type="file" id="file-input" accept=".xml" style="display: none;">
-            </div>
+      <header>
+        <h1 data-i18n="title">XML Tree Visualization Tool</h1>
+        <div class="language-selector">
+          <button id="lang-en" class="lang-btn active">English</button>
+          <button id="lang-zh" class="lang-btn">中文</button>
         </div>
-        <div id="visualization-container"></div>
+        <div class="github-link">
+          <a
+            href="https://github.com/Aglargil/xml-tree-visual"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </header>
+      <div class="input-section">
+        <div class="file-upload">
+          <label for="xml-file" data-i18n="uploadLabel">Upload XML File:</label>
+          <input type="file" id="xml-file" accept=".xml" />
+        </div>
+        <div class="text-input">
+          <label for="xml-input" data-i18n="inputLabel"
+            >Or Input XML Content Directly:</label
+          >
+          <textarea
+            id="xml-input"
+            data-i18n-placeholder="inputPlaceholder"
+            placeholder="Paste XML content here"
+          ></textarea>
+        </div>
+        <button id="visualize-btn" data-i18n="visualizeBtn">Visualize</button>
+      </div>
+      <div class="visualization-section">
+        <h2 data-i18n="resultTitle">Visualization Result</h2>
+        <div id="tree-container"></div>
+      </div>
     </div>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/elkjs@0.8.2/lib/elk.bundled.js"></script>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
