@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML树可视化工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>XML树可视化工具</h1>
+        <div class="input-area">
+            <textarea id="xml-input" placeholder="请粘贴XML内容..."></textarea>
+            <div class="buttons">
+                <button id="visualize-btn">可视化</button>
+                <button id="upload-btn">上传XML文件</button>
+                <input type="file" id="file-input" accept=".xml" style="display: none;">
+            </div>
+        </div>
+        <div id="visualization-container"></div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/elkjs@0.8.2/lib/elk.bundled.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
