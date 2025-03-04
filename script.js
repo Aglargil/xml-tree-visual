@@ -77,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
         reader.onload = function (e) {
           xmlInput.value = e.target.result;
           visualizeXML(e.target.result);
+          document.getElementById("export-svg-btn").style.display =
+            "inline-block";
+          document.getElementById("export-png-btn").style.display =
+            "inline-block";
         };
         reader.readAsText(file);
       }
